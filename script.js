@@ -12,3 +12,12 @@ btn.addEventListener("click", function () {
     message.textContent = "دوست " + count + " مرة";
   }
 });
+
+const skills = ["HTML", "CSS", "JavaScript"];
+const list = document.getElementById("skills");
+
+for (let i = 0; i < skills.length; i++) {
+  const item = document.createElement("li");
+  item.textContent = skills[i];
+  list.appendChild(item);
+}
