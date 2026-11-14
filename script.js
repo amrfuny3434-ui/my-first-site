@@ -1,0 +1,1 @@
+alert("أهلاً، JavaScript شغال!");
