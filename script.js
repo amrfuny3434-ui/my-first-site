@@ -21,3 +21,31 @@ for (let i = 0; i < skills.length; i++) {
   item.textContent = skills[i];
   list.appendChild(item);
 }
+
+const projects = [
+  { title: "الصفحة الأولى", description: "أول صفحة HTML كتبتها." },
+  { title: "Portfolio", description: "الصفحة اللي بتشوفها دلوقتي." },
+  { title: "عدّاد الضغطات", description: "أول مشروع JavaScript." },
+    { title: "ال دياب للسيارت", description: "مركز سيارت " },
+];
+
+function createCard(project) {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  const title = document.createElement("h3");
+  title.textContent = project.title;
+
+  const desc = document.createElement("p");
+  desc.textContent = project.description;
+
+  card.appendChild(title);
+  card.appendChild(desc);
+  return card;
+}
+
+const cardsContainer = document.getElementById("projects");
+
+for (let i = 0; i < projects.length; i++) {
+  cardsContainer.appendChild(createCard(projects[i]));
+}
