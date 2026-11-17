@@ -13,7 +13,7 @@ btn.addEventListener("click", function () {
   }
 });
 
-const skills = ["HTML", "CSS", "JavaScript"];
+const skills = ["HTML", "CSS", "JavaScript", "Git", "APIs"];
 const list = document.getElementById("skills");
 
 for (let i = 0; i < skills.length; i++) {
@@ -23,15 +23,16 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 const projects = [
-  { title: "الصفحة الأولى", description: "أول صفحة HTML كتبتها." },
-  { title: "Portfolio", description: "الصفحة اللي بتشوفها دلوقتي." },
-  { title: "عدّاد الضغطات", description: "أول مشروع JavaScript." },
-    { title: "ال دياب للسيارت", description: "مركز سيارت " },
+  { title: "آلة حاسبة", description: "جمع رقمين بـ JavaScript.", link: "calculator.html" },
+  { title: "قائمة المهام", description: "إضافة ومسح مهام، وبتتحفظ في المتصفح.", link: "todo.html" },
+  { title: "مولّد اقتباسات", description: "اقتباس عشوائي في كل ضغطة.", link: "quotes.html" },
+  { title: "الطقس", description: "بيانات حقيقية من API.", link: "weather.html" },
 ];
 
 function createCard(project) {
-  const card = document.createElement("div");
+  const card = document.createElement("a");
   card.className = "card";
+  card.href = project.link;
 
   const title = document.createElement("h3");
   title.textContent = project.title;

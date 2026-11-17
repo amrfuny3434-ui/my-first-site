@@ -3,30 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>أول صفحة ليا</title>
+    <title>موقعي الشخصي</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>أهلاً، أنا بتعلم برمجة</h1>
-    <p>ده أول سطر كود أكتبه بإيدي.</p>
-    <button id="btn">اضغط عليا</button>
-    <p id="message"></p>
+    <h1>أهلاً، أنا AMR</h1>
+    <p>بتعلم برمجة عشان أشتغل فريلانس.</p>
 
-    <h2>عني</h2>
-    <p>اسمي <strong>AMR</strong> وبتعلم برمجة عشان أشتغل فريلانس.</p>
+    <h2>اللي بتعلمه</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git</li>
+      <li>APIs</li>
+    </ul>
 
-    <h2>اللي هتعلمه</h2>
-    <ul id="skills"></ul>
+    <h2>مشاريعي</h2>
+    <div class="cards">
+      <a class="card" href="calculator.html">
+        <h3>آلة حاسبة</h3>
+        <p>جمع رقمين بـ JavaScript.</p>
+      </a>
+      <a class="card" href="todo.html">
+        <h3>قائمة المهام</h3>
+        <p>إضافة ومسح مهام، وبتتحفظ في المتصفح.</p>
+      </a>
+      <a class="card" href="quotes.html">
+        <h3>مولّد اقتباسات</h3>
+        <p>اقتباس عشوائي في كل ضغطة.</p>
+      </a>
+      <a class="card" href="weather.html">
+        <h3>الطقس</h3>
+        <p>بيانات حقيقية من API.</p>
+      </a>
+    </div>
 
     <h2>روابط مفيدة</h2>
     <a href="https://www.freecodecamp.org">موقع freeCodeCamp</a>
-        <br />
-    <a href="todo.html">تطبيق قائمة المهام</a>
-    <br />
-    <a href="calculator.html">آلة حاسبة</a>
-    <h2>مشاريعي</h2>
-    <div class="cards" id="projects"></div>
-
-    <script src="script.js"></script>
   </body>
 </html>

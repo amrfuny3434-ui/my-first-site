@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الطقس</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>الطقس الآن</h1>
+
+      <select id="city">
+        <option value="30.04,31.24">القاهرة</option>
+        <option value="31.20,29.92">الإسكندرية</option>
+        <option value="30.01,31.21">الجيزة</option>
+        <option value="25.69,32.64">الأقصر</option>
+        <option value="24.09,32.90">أسوان</option>
+        <option value="29.07,31.10">بني سويف</option>
+      </select>
+      <button id="getWeather">اعرض الطقس</button>
+
+      <p id="output">اختار مدينة ودوس على الزرار</p>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
